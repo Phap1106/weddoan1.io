@@ -1,0 +1,196 @@
+            /* các thuộc tính chung */
+
+* {
+    color: rgb(20,20,20);
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+:root {
+    --hover_color: rgb(12, 156, 213);
+    --tillte_color: rgb(0, 0, 0);
+    /* --bg_color: rgb(0,255,255); */
+    --category_color: rgb(23, 115, 235);
+    --border_color:brown;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    color: var(--tillte_color);
+}
+
+body{
+    background-color: white;
+    width: 100%;
+    min-height: 600px;
+}
+
+             /* các thuộc tính chi tiết */
+
+             /* phần đầu */
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+}
+            /* phần menu điều hướng tìm kiếm, đăng nhập, đăng ký */
+
+.menu{  
+    background-color: rgb(128, 212, 250);
+    background-image: url('https://thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-nen-dong-powerpoint-cute.gif');
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+           
+
+.home{
+    width: 30%;
+    height: 100%;
+    float: left; 
+}
+.home a{
+    color: gold;
+    font-size: 3em;
+    line-height: 100px;
+    margin: 0 25%;
+    border-radius: 2px;
+    font-family: cursive;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+}
+
+.search_bar{
+    background-image: url('http://3.bp.blogspot.com/_4dcA6aqbuv0/TLkJKoL87vI/AAAAAAAAEsI/2wj5pAKN69c/s1600/trai+tim+1.gif');
+    background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+input#search{
+
+    width: 90%;
+    height: 30%;
+    margin: 35px 0 ;
+    border-radius: 3px;
+}
+
+.account{
+    text-align: right;
+}
+.account a:hover{
+    text-decoration: underline;
+}
+
+                /* phần thân */
+
+#container{
+    width: 90%;
+    min-height: 600px ;
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.box_1> div:hover{
+    box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.2), 0 6px 12px  rgba(0, 0, 0, 0.19);
+}
+.box_2> div:hover{
+    box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.2), 0 6px 12px  rgba(0, 0, 0, 0.19);
+}
+.box_3> div:hover{
+    box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.2), 0 6px 12px  rgba(0, 0, 0, 0.19);
+}
+
+.box_1{
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+}
+.category{
+    width: 16.66%;
+    height: 50px;
+    padding: 3px;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    box-sizing: border-box;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.category a{
+    line-height: 40px;
+}
+.box_2{
+    width: 100%;
+    height: 200px;
+    margin: 8px 0;
+}
+.sale_1{
+    background-image: url('https://static.wixstatic.com/media/a27d24_ec29bda99d4340f880df8aef58180bb8~mv2.png/v1/fit/w_320%2Ch_242%2Cal_c/file.png');
+    background-size: 20%;
+    background-origin:padding-box;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    padding: 1%;
+    box-sizing: border-box;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    float: left;
+}
+.sale_2{
+    background-image: url('https://hitecom.vn/img/bigsale.gif');
+    background-size: 20%;
+    background-origin:padding-box;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    padding: 1%;
+    box-sizing: border-box;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    float: left;
+}
+
+.box_3{
+    width: 100%;
+    height: 1120px;
+    margin: 30px 0;
+}
+.product{
+    width: 25%;
+    height: 200px;
+    padding: 5px;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    box-sizing: border-box;
+    float: left;
+}
+
+
+
+                /* phần chân */
+#footer{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 200px;
+}
+#footer p{
+    text-align: center;
+    line-height: 200px;
+}
